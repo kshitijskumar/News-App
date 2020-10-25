@@ -1,0 +1,11 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.NewsApp" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
+        <item name="android:colorPrimary">@color/DarkBlue</item>
+        <item name="android:colorPrimaryDark">@color/DarkBlue</item>
+        <item name="background">@color/DarkBlue</item>
+        <item name="colorSecondary">@color/DarkBlue</item>
+        <item name="android:background">@color/DarkBlue</item>
+
+    </style>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FullArticle">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tvFullTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:text="Title" />
+
+            <ImageView
+                android:id="@+id/ivFullImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/ic_news_image" />
+
+            <TextView
+                android:id="@+id/tvFullAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:text="Author" />
+
+            <TextView
+                android:id="@+id/tvFullPublishedAt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:text="Published at" />
+
+            <TextView
+                android:id="@+id/tvFullDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:autoLink="web"
+                android:background="@color/LightBlue"
+                android:padding="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                tools:text="Description" />
+
+            <TextView
+                android:id="@+id/tvFullArticleLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:autoLink="web|phone"
+                android:inputType="textUri"
+                android:linksClickable="true"
+                android:text="Article from "
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

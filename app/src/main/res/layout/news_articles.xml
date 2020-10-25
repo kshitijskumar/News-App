@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LightBlue"
+        android:padding="2dp"
+        app:cardCornerRadius="8dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/LightBlue"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/ivArticleImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1.5"
+                android:background="@color/LightBlue"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_news_image"
+                android:contentDescription="@string/news_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/LightBlue"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/tvArticleTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/LightBlue"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    tools:text="Title" />
+
+                <TextView
+                    android:id="@+id/tvArticleAuthor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/LightBlue"
+                    tools:text="Author" />
+
+                <TextView
+                    android:id="@+id/tvArticlePublishedDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/LightBlue"
+                    tools:text="Published at" />
+
+                <TextView
+                    android:id="@+id/tvArticleDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/LightBlue"
+                    android:textColor="#ffffff"
+                    tools:text="Description" />
+
+                <Button
+                    android:id="@+id/btnReadMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/read_more_button"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/read_more"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
